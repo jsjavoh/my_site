@@ -1,0 +1,58 @@
+@keyframes parallax {
+    0% {
+        background-position: 0 0; /* Boshlang'ich pozitsiya */
+    }
+    50% {
+        background-position: 75px 75px; /* Pastga siljish */
+    }
+    100% {
+        background-position: 0 0; /* Qaytib boshlang'ich holatga */
+    }
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3; /* Fond ustida qolishi uchun */
+    background: rgba(0, 0, 0, 0.5); /* Shaffof fon qo'shish */
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav_logo {
+    font-size: 2rem;
+    color: #005f8a;
+}
+
+.nav_menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_item > a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #5a6069;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.menu-toggle {
+    display: none; /* Kompyuterda yashirilgan */
+}
+
+.menu-icon {
+    display: none; /* Kompyuterda yashirilgan */
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}

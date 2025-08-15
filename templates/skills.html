@@ -1,0 +1,37 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %} Skills {% endblock title %}
+{% block content %}
+<div class="skills">
+    <div class="skill-link">
+            <i class="fa-brands fa-html5"><div class="name">HTML 5</div></i>
+    </div>
+    <div class="skill-link">
+            <i class="fa-brands fa-css3"><div class="name">CSS3</div></i>
+    </div>
+    <div class="skill-link">
+            <i class="fa-brands fa-js"><div class="name">Javascript</div></i>
+    </div>
+    <div class="skill-link">
+            <i class="fa-brands fa-bootstrap"><div class="name">Bootstrap 5</div></i>
+    </div>
+    <div class="skill-link">
+            <i class="fa-brands fa-python"><div class="name">Python</div></i>
+    </div>
+    <div class="skill-link">
+            <i class="fa-solid fa-database"><div class="name">Postgresql</div></i>
+    </div>
+    <div class="skill-link">
+<!--        <img src="{% static 'images/dj.png' %}" alt="dj">-->
+        <dic class="no_img">Django</dic>
+    </div>
+    <div class="skill-link">
+<!--            <img src="{% static 'images/drf.png' %}" alt="dj">-->
+        <div class="no_img">DRF</div>
+    </div>
+        <div class="skill-link">
+<!--            <img src="{% static 'images/fasrapi.png' %}" alt="dj">-->
+            <div class="no_img">FastAPI</div>
+    </div>
+</div>
+{% endblock content %}

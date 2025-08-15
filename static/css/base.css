@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/sky.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    animation: parallax 30s infinite linear; /* Animatsiya qo'shiladi */
+}
+@keyframes parallax {
+    0% {
+        background-position: 0 0; /* Boshlang'ich pozitsiya */
+    }
+    50% {
+        background-position: 75px 75px; /* Pastga siljish */
+    }
+    100% {
+        background-position: 0 0; /* Qaytib boshlang'ich holatga */
+    }
+}
+
+.logo{
+    font-size: 2rem;
+    color: #005f8a;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+}
+.nav_item{
+    padding: 10px 20px;
+}
+.nav_logo{
+    width: 60%;
+}
+
+.nav_item > a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #5a6069;
+    font-size: 1.25rem;
+    font-weight: 400;
+    justify-content: flex-end;
+}
+footer {
+    color: #5a6069;
+    position: fixed; /* Doim pastda qoladi */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5); /* Shaffof qora fon qo'shish, agar kerak bo'lsa */
+    z-index: 3; /* Boshqa elementlar ustida qolishi uchun */
+    display: flex;
+    justify-content: space-between; /* .date va .utf ni ikki tomonga joylashtirish */
+    align-items: center;
+}
+
+.utf {
+    position: static; /* Absolute o'rniga statik qilish, flex bilan boshqariladi */
+}
+
+
+section {
+    color: #bdcade;
+    text-align: center;
+    display: flex;                  /* Flexbox yoqish */
+    flex-direction: column;         /* Elementlarni ustun bo‘lib joylash */
+    align-items: center;            /* Gorizontal markaz */
+    justify-content: center;        /* Vertikal markaz */
+    min-height: 100vh;               /* Butun viewport balandligi */
+    margin: 0;                       /* Margin olib tashlash */
+    padding: 0;
+}
+
+.container_img > img{
+    width: 200px;
+    border-radius: 50%  ;
+
+}
+.container_info > h1{
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.container_info > h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.telegram-link {
+    text-decoration: none;
+    color: #0088cc; /* Telegram rangi */
+    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Ikonka va matn orasidagi masofa */
+    padding: 1rem 2rem;
+}
+.telegram-link:hover {
+    color: #005f8a; /* Hover effekt */
+}
+
+/* about */
+
+.about{
+    padding: 2rem;
+    margin-top: 3rem;
+
+}
+.summary_name{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-bottom: 1.5rem;
+    color: #7f8896;
+}
+.summery_text{
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #7f8896;
+    letter-spacing: 2px;
+}
+.education{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #7f8896;
+}
+.education_name{
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    color: #5a6069;
+    padding-bottom: 1rem;
+}
+.education_fak{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: #5a6069;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.education_date{
+    color: #5a6069;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+.courses{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #7f8896;
+}
+.courses_name{
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    color: #5a6069;
+    padding-bottom: 1rem;
+}
+.courses_text{
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #7f8896;
+    letter-spacing: 2px;
+}
+/*skills*/
+.name{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    gap: 2rem;
+    padding: 2rem;
+    color: #0088cc; /* Telegram rangi */
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;            /* Gorizontal markaz */
+    justify-content: center;        /* Vertikal markaz */
+    min-height: 80vh;               /* Butun viewport balandligi */
+
+}
+skill-link{
+    text-align: center;
+}
+.skill-link:hover {
+    color: #005f8a; /* Hover effekt */
+}
+
+/* portfolio */
+.portfolio{
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    gap: 2rem;
+    padding: 2rem;
+    color: #0088cc; /* Telegram rangi */
+    font-size: 2.5rem;
+    align-items: center;            /* Gorizontal markaz */
+    justify-content: center;        /* Vertikal markaz */
+    min-height: 80vh;
+}
+.project_item{
+    padding: 1rem;
+    border-radius: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.item_title{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0.825rem;
+    color: #7f8896;
+}
+.item_description{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.825rem;
+    line-height: 1.25rem;
+    color: #7f8896;
+}
+.item_link{
+    margin: 0.825rem;
+    font-size: 1rem;
+    color: #005f8a;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.item_date{
+    font-size: 0.825rem;
+    font-weight: 300;
+    color: #5a6069;
+    margin: 0.825rem;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 4rem 2rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 6rem auto 2rem;
+    background: rgba(0, 0, 0, 0.5); /* Shaffof qora fonda, backdrop-filter o'rnini bosadi */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    color: #e0e0e0;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-name, .form-email, .form-message {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-name:focus, .form-email:focus, .form-message:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 95, 138, 0.5);
+}
+
+.form-name::placeholder, .form-email::placeholder, .form-message::placeholder {
+    color: #ccc;
+    opacity: 0.8;
+}
+
+.submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #005f8a, #0088cc);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background: linear-gradient(90deg, #004d70, #006bb3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 95, 138, 0.4);
+}
+
+
+
+
+/* responsive */
+
+
+/* Responsive Design (telefonlar uchun, 768px dan kichik) */
+@media (max-width: 768px) {
+    .name{
+        font-size: 0.8rem;
+        margin-top: 0.625rem;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 6.25rem 6.25rem 6.25rem;
+        gap: 1rem;
+        padding: 1rem;
+        color: #0088cc; /* Telegram rangi */
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;            /* Gorizontal markaz */
+        justify-content: center;        /* Vertikal markaz */
+        min-height: 80vh;               /* Butun viewport balandligi */
+
+    }
+
+    .nav {
+        justify-content: space-between;
+
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Chapdan yashirilgan */
+        width: 250px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8); /* Shaffof qora fon */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: left 0.3s ease; /* Animatsiya */
+        z-index: 4;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav_menu {
+        left: 0; /* Ochilganda chapdan chiqadi */
+    }
+
+    .menu-icon {
+        display: block; /* Mobil uchun ko'rinadi */
+    }
+
+    .nav_item > a {
+        font-size: 1.5rem; /* Katta font menyuda */
+        color: #fff; /* Oq rang */
+    }
+
+    /* Boshqa responsive o'zgarishlar saqlanadi (oldingi xabarda) */
+    /* Responsive Design (telefonlar uchun, 768px dan kichik) */
+    footer {
+        padding: 10px 20px; /* Kichikroq padding */
+        flex-direction: row; /* Vertikal joylashtirish */
+        text-align: center; /* Matnni markazlash */
+    }
+
+    .utf {
+        margin-top: 5px; /* .utf ni pastga surish */
+    }
+
+    /* Responsive design */
+    .contact {
+        margin: 4rem auto 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .form-name, .form-email, .form-message, .submit {
+        font-size: 0.95rem;
+    }
+
+    /* Responsive Design (telefonlar uchun, 768px dan kichik) */
+    .portfolio {
+        grid-template-columns: 1fr !important; /* Bitta ustun */
+        gap: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem; /* Kichikroq font */
+        min-height: 60vh; /* Kichikroq balandlik */
+    }
+
+    .project_item {
+        padding: 0.5rem;
+        border-radius: 1.5rem; /* Kichikroq radius */
+    }
+
+    .item_title {
+        font-size: 1.5rem; /* Kichikroq font */
+        margin: 0.5rem;
+    }
+
+    .item_description {
+        font-size: 0.9rem; /* Kichikroq font */
+        margin: 0.5rem;
+        line-height: 1.1rem; /* Kichikroq satr oralig'i */
+    }
+
+    .item_link {
+        font-size: 0.9rem; /* Kichikroq font */
+        margin: 0.5rem;
+    }
+
+    .item_date {
+        font-size: 0.7rem; /* Kichikroq font */
+        margin: 0.5rem;
+    }
+}

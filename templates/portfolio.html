@@ -1,0 +1,18 @@
+{% extends 'base1.html' %}
+
+{% block title %} Portfolio {% endblock title %}
+
+{% block content %}
+
+<div class="portfolio">
+    {% for project in projects %}
+        <div class="project_item">
+            <div class="item_title">{{ project.title }}</div>
+            <div class="item_description">{{ project.description }}</div>
+            <a class="item_link" href="{{ project.link }}">Link</a>
+            <div class="item_date">{{ project.created_at }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
